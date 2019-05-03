@@ -61,6 +61,16 @@ class InfoBox extends React.Component {
   avatarOnClick = featureNavigator.bind(this);
   menulinkOnClick = moveNavigatorAside.bind(this);
 
+  // componentDidMount() {
+  //   const url = "http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=F68F342CFD1605D659A9EFFBC4F63AB3&steamid=76561197977471369&format=json"
+  //   fetch(url, {
+  //     headers: {
+  //       'Access-Control-Allow-Origin': '*'
+  //     }
+  //   })
+  //   .then((data) => console.log(data))
+  // }
+
   expandOnClick = e => {
     this.props.setNavigatorShape("closed");
   };
@@ -68,7 +78,6 @@ class InfoBox extends React.Component {
   render() {
     const { classes, parts, pages, navigatorPosition, navigatorShape } = this.props;
     const info = parts.find(el => el.node.frontmatter.title === "info");
-
     return (
       <aside
         className={`${classes.infoBox} ${navigatorPosition ? navigatorPosition : ""} 

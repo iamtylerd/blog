@@ -9,9 +9,9 @@ cover: notebook.jpg
 
 # Notebook
 
-Going forward I am going to write about my notebook.  I bought this notebook the day before I started school.  It is full of "stuff".  Things I have learned, things I wanted to make, things I didn't understand.  I am hoping this will show the evolution of someone who started school to someone who has been a proffessional developer for 3+ years now.  
+Ever since I wanted to be a developer, I've kept a notebook. This notebook contains my app ideas, questions, answers, designs, and meetup notes as I learned to be a developer in school and in my `career || personal projects`. In each post of this section, I'll share a page of my notebook and explain my intention at the time and what I would change today.
 
-###### You will see that everyone struggles and everyone has 'dumb' questions
+###### We all face challenges at every professional level, I did and still do, feel free to reach out with any questions.
 
 
 

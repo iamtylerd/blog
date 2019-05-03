@@ -12522,6 +12522,11 @@ statuses@~1.3.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
   integrity sha1-+vUbnrdKrvOzrPStX2Gr8ky3uT4=
 
+steamapi@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/steamapi/-/steamapi-2.0.7.tgz#9711bccd390caa66733c7b9f109c4d2b300dc703"
+  integrity sha512-hmGMgqf5y0baGWXWnkr7hpX9PIf6l5nTXz+UQumVpEKP6lBZ3+D0434uuzAeBeHRTIBH1/wut00n/oQs6EpzmA==
+
 steno@^0.4.1:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/steno/-/steno-0.4.4.tgz#071105bdfc286e6615c0403c27e9d7b5dcb855cb"
