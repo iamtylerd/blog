@@ -6,7 +6,7 @@ import config from "../../../content/meta/config";
 const Seo = props => {
   const { data, facebook } = props;
   const postTitle = ((data || {}).frontmatter || {}).title;
-  const postDescription = ((data || {}).frontmatter || {}).description;
+  const postDescription = ((data || {}).frontmatter || {}).subTitle;
   const postCover = ((data || {}).frontmatter || {}).cover;
   const postSlug = ((data || {}).fields || {}).slug;
 
@@ -14,7 +14,7 @@ const Seo = props => {
   const description = postDescription ? postDescription : config.siteDescription;
   const image = postCover ? postCover.childImageSharp.resize.src : config.siteImage;
   const url = config.siteUrl + config.pathPrefix + postSlug;
-
+  console.log(props)
   return (
     <Helmet
       htmlAttributes={{
@@ -34,10 +34,12 @@ const Seo = props => {
       <meta property="fb:app_id" content={facebook.appId} />
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@tylerdaniel.io" />
       <meta
         name="twitter:creator"
         content={config.authorTwitterAccount ? config.authorTwitterAccount : ""}
       />
+      <meta name="twitter:image" content={image} />
     </Helmet>
   );
 };

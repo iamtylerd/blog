@@ -37,7 +37,7 @@
     "no-nested-ternary": "off",
     "no-unused-vars": "warn",
     "prefer-destructuring": "off",
-    "prettier/prettier": ["error"],
+    "prettier/prettier": ["error", { "singleQuote": true }],
     "react/jsx-uses-vars": "error",
     "react/no-deprecated": "off"
   },

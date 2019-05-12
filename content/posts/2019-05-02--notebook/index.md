@@ -1,6 +1,6 @@
 ---
 title: My Notebook
-subTitle: Thoughts of a developer
+subTitle: Thoughts of a Developer
 category: "notebook"
 cover: notebook.jpg
 ---
