@@ -8,6 +8,7 @@ cover: page-1.jpg
 ![tylerdaniel.io](./page-1.jpg)
 
 # Page 1
+[For context of Notebook posts click here](/notebook)
 
 ## Port
 

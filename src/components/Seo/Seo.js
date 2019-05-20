@@ -10,11 +10,10 @@ const Seo = props => {
   const postCover = ((data || {}).frontmatter || {}).cover;
   const postSlug = ((data || {}).fields || {}).slug;
 
-  const title = postTitle ? `${postTitle} - ${config.shortSiteTitle}` : config.siteTitle;
+  const title = postTitle ? `${postTitle}` : config.siteTitle;
   const description = postDescription ? postDescription : config.siteDescription;
   const image = postCover ? postCover.childImageSharp.resize.src : config.siteImage;
   const url = config.siteUrl + config.pathPrefix + postSlug;
-  console.log(props)
   return (
     <Helmet
       htmlAttributes={{
@@ -25,6 +24,7 @@ const Seo = props => {
       {/* General tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={`https://tylerdaniel.io/${postSlug}`} />
       {/* OpenGraph tags */}
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
@@ -39,7 +39,8 @@ const Seo = props => {
         name="twitter:creator"
         content={config.authorTwitterAccount ? config.authorTwitterAccount : ""}
       />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:description" content={postDescription} />
+      <meta name="twitter:image" content={`https://tylerdaniel.io${image}`} />
     </Helmet>
   );
 };
